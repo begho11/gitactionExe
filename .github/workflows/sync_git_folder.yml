@@ -22,12 +22,11 @@ jobs:
       DATABRICKS_AUTH_TYPE: github-oidc
       DATABRICKS_HOST: ${{ vars.databrickshost }}
       DATABRICKS_CLIENT_ID: ${{ secrets.DATABRICKS_CLIENT_ID }} # This is the service principal UUID.
-
     steps:
       - uses: actions/checkout@v3
       - uses: databricks/setup-cli@main
       - name: Update git folder
         # Set your workspace path and branch name here
-        run: databricks repos update /Workspace/<git-folder-path> --branch git-folder-cicd-example
+        run: databricks repos update /Workspace/gitfolder/gitactionExe --branch devbranch
         # Set your workspace path and branch name here
-        run: databricks repos update /Workspace/<git-folder-path> --branch git-folder-cicd-example
+        #run: databricks repos update /Workspace/gitfolder/gitactionExe --branch devbranch
