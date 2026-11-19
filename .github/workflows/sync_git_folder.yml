@@ -20,7 +20,7 @@ jobs:
     environment: prod
     env:
       DATABRICKS_AUTH_TYPE: github-oidc
-      DATABRICKS_HOST: ${{ vars.DATABRICKS_HOST }}
+      DATABRICKS_HOST: ${{ vars.databrickshost }}
       DATABRICKS_CLIENT_ID: ${{ secrets.DATABRICKS_CLIENT_ID }} # This is the service principal UUID.
 
     steps:
