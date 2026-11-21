@@ -27,6 +27,6 @@ jobs:
       - uses: databricks/setup-cli@main
       - name: Update git folder
         # Set your workspace path and branch name here
-        run: databricks repos update /Workspace/gitfolder/gitactionExe --branch devbranch
+        run: databricks repos update /Workspace/Users/loko57347@gmail.com/gitfolder/gitactionExe --branch devbranch
         # Set your workspace path and branch name here
-        #run: databricks repos update /Workspace/gitfolder/gitactionExe --branch devbranch
+        #run: databricks repos update /Workspace/Users/loko57347@gmail.com/gitfolder/gitactionExe --branch devbranch
