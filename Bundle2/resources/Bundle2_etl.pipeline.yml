@@ -3,15 +3,15 @@
 resources:
   pipelines:
     Bundle2_etl:
-      name: Bundle2_etl
+      name: PipelinesBundleIncludesAll
       catalog: ${var.catalog}
       schema: ${var.schema}
       serverless: true
-      root_path: "../src/Bundle2_etl"
+      root_path: ../src/PipelinesBundleIncludesAll
 
       libraries:
         - glob:
-            include: ../src/Bundle2_etl/transformations/**
+            include: ../src/PipelinesBundleIncludesAll/transformations/**
 
       environment:
         dependencies:
